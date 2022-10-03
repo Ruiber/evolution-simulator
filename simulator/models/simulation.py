@@ -1,8 +1,7 @@
 class Simulation:
-    def __init__(self, species_groups, total_rounds, population, mutation_matrix):
+    def __init__(self, species_groups, total_rounds, mutation_matrix):
         self.species_groups = species_groups
         self.total_rounds = total_rounds
-        self.population = population
         self.mutation_matrix = mutation_matrix
     
 
