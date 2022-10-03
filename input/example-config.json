@@ -1,21 +1,14 @@
 {
     "rounds": 50,
+    "food_pairs": 100,
     "species": [
         {
-            "birth": 0.5,
-            "death": 0.3,
-            "reproduction": 0.2,
-            "population": 10
+            "aggression": 0,
+            "population": 40
         },
         {
-            "birth": 0,
-            "death": 0.1,
-            "reproduction": 0.6,
-            "population": 0
+            "aggression": 1,
+            "population": 1
         }
-    ],
-    "mutation": [
-        [0, 0.5],
-        [0, 0]
     ]
 }

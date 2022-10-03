@@ -23,8 +23,6 @@ class ConfigurationParser:
             species_list = config.get('species')
             species_groups = []
             for species in species_list:
-                species_groups.append(Species(species.get('birth'), species.get('death'), species.get('reproduction'), species.get('population')))
-
-            mutation = config.get('mutation')
+                species_groups.append(Species(species.get('aggression'), species.get('population')))
             
-            return Simulation(species_groups, rounds, mutation)
+            return Simulation(species_groups, rounds)

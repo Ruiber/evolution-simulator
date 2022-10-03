@@ -1,8 +1,6 @@
 class Species:
-    def __init__(self, birth, death, reproduction, population):
-        self.birth = birth
-        self.death = death
-        self.reproduction = reproduction
+    def __init__(self, aggression, population):
+        self.aggression = aggression
         self.population = population
 
     
