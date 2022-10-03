@@ -1,0 +1,21 @@
+{
+    "rounds": 50,
+    "species": [
+        {
+            "birth": 0.5,
+            "death": 0.3,
+            "reproduction": 0.2,
+            "population": 10
+        },
+        {
+            "birth": 0,
+            "death": 0.1,
+            "reproduction": 0.6,
+            "population": 0
+        }
+    ],
+    "mutation": [
+        [0, 0.5],
+        [0, 0]
+    ]
+}
