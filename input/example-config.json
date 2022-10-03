@@ -3,10 +3,12 @@
     "food_pairs": 100,
     "species": [
         {
+            "name": "Dove",
             "aggression": 0,
             "population": 40
         },
         {
+            "name": "Hawk",
             "aggression": 1,
             "population": 1
         }

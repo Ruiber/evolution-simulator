@@ -1,8 +1,13 @@
 class Species:
-    def __init__(self, aggression, population):
+    def __init__(self, name, aggression, population):
+        self.name = name
         self.aggression = aggression
         self.population = population
 
     
-    def run_round(self):
-        pass
+    def death(self):
+        self.population -= 1
+
+
+    def birth(self):
+        self.population += 1
