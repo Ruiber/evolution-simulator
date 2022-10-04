@@ -68,9 +68,9 @@ class Simulation:
     
     def handle_meet(self, food_pair):
         if len(food_pair) == 2:
-            energy_spent = min(food_pair[0].aggression, food_pair[1].aggression)
-            food_pair[0].food = 1 + (food_pair[0].aggression - food_pair[1].aggression)*0.5 - energy_spent
-            food_pair[1].food = 1 + (food_pair[1].aggression - food_pair[0].aggression)*0.5 - energy_spent
+            energy_spent = min(food_pair[0].species.aggression, food_pair[1].species.aggression)
+            food_pair[0].food = 1 + (food_pair[0].species.aggression - food_pair[1].species.aggression)*0.5 - energy_spent
+            food_pair[1].food = 1 + (food_pair[1].species.aggression - food_pair[0].species.aggression)*0.5 - energy_spent
         elif len(food_pair) == 1:
             food_pair[0].food = 2
 
