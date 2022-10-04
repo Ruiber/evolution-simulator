@@ -67,15 +67,10 @@ class Simulation:
 
     
     def handle_meet(self, food_pair):
-        #TODO: avaliar como fica a generalização
         if len(food_pair) == 2:
-            if food_pair[0].species.aggression == food_pair[1].species.aggression:
-                food_pair[0].food = 1 - food_pair[0].species.aggression
-                food_pair[1].food = 1 - food_pair[1].species.aggression
-            else:
-                aggression_sum = food_pair[0].species.aggression + food_pair[1].species.aggression
-                food_pair[0].food = 0.5 + food_pair[0].species.aggression / aggression_sum
-                food_pair[1].food = 0.5 + food_pair[1].species.aggression / aggression_sum
+            energy_spent = min(food_pair[0].aggression, food_pair[1].aggression)
+            food_pair[0].food = 1 + (food_pair[0].aggression - food_pair[1].aggression)*0.5 - energy_spent
+            food_pair[1].food = 1 + (food_pair[1].aggression - food_pair[0].aggression)*0.5 - energy_spent
         elif len(food_pair) == 1:
             food_pair[0].food = 2
 
