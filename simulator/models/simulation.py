@@ -18,8 +18,9 @@ class Simulation:
     
 
     def run(self):
-        for _ in range(self.total_rounds):
+        for i in range(self.total_rounds):
             self.run_round()
+            print('Percentage of the simulation executed: ' + str((i + 1) * 100 / self.total_rounds) + '%')
         
         return self.reporter
 

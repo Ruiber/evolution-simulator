@@ -1,0 +1,16 @@
+{
+    "rounds": 50,
+    "food_pairs": 5000,
+    "species": [
+        {
+            "name": "Dove",
+            "aggression": 0,
+            "population": 1
+        },
+        {
+            "name": "Hawk",
+            "aggression": 1,
+            "population": 1
+        }
+    ]
+}
